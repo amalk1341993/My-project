@@ -1,0 +1,22 @@
+<ion-menu [content]="content">
+  <ion-content class="auto_sidemenu_bg">
+  <div class="auto_sidemenu">
+    <div class="auto_profile_top">
+      <div class="auto_profile_pic no_pic" menuClose (click)="editprofile()">
+      </div>
+      <h5>Ann Alex</h5>
+      <p>ann.alexa@gmail.com</p>
+    </div>
+  </div>
+  <div class="auto_menu_list">
+    <ul>
+      <li menuClose (click)="landing()"><span><ion-icon name="ios-home-outline"></ion-icon></span><span>Home</span></li>
+      <li menuClose (click)="booking()"><span><ion-icon name="ios-person-outline"></ion-icon></span><span>Booking</span></li>
+      <li menuClose (click)="logout()"><span><ion-icon name="ios-power-outline"></ion-icon></span><span>Logout</span></li>
+    </ul>
+  </div>
+  </ion-content>
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

@@ -1,0 +1,44 @@
+<ion-header class="nav_header theme_color">
+  <button ion-button class="nav_btn float_left" (click)="dismiss()"><ion-icon name="ios-arrow-back"></ion-icon></button>
+    <div class="nav_title float_left">Profile</div>
+  <button ion-button class="nav_btn float_right"></button>
+  <div class="clear"></div>
+</ion-header>
+<ion-content padding class="auto_login_bg">
+  <div class="auto_profile">
+    <div class="auto_profile_banner">
+      <div class="auto_pic">
+        <div class="auto_pic_edit">
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="auto_login_form pt0">
+      <h2>Ann Alexa</h2>
+      <p>ann.alexa@gmail.com</p>
+      <div class="auto_login_row">
+        <input class="auto_logn_form_input" placeholder="Name">
+      </div>
+      <div class="auto_login_row">
+        <input class="auto_logn_form_input" placeholder="Phone">
+      </div>
+      <div class="auto_login_row">
+        <input class="auto_logn_form_input" placeholder="Mail ID">
+      </div>
+      <h2>Change Password</h2>
+      <br>
+      <div class="auto_login_row">
+        <input class="auto_logn_form_input" placeholder="Current Password">
+      </div>
+      <div class="auto_login_row">
+        <input class="auto_logn_form_input" placeholder="New Password">
+      </div>
+      <div class="auto_login_row">
+        <input class="auto_logn_form_input" placeholder="Confirm Password">
+      </div>
+      <div class="auto_login_row align_center">
+        <button ion-button class="auto_login_submit" (click)="dismiss()">SAVE & CLOSE</button>
+      </div>
+    </div>
+  </div>
+</ion-content>
